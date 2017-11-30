@@ -61,17 +61,24 @@
 
 	<section class="slide" id="defn">
 		<h2>Definition of Open Source</h2>
-		<p class="next">Open-source software is software whose source code is available for anyone to view, modify, and enhance. Source code refers to computer instructions that are written by software developers in a programming language to manipulate the way software works. Most proprietary software is distributed in the form of executable files, where the source code has been compiled such that it is encrypted for computer use, without the source code being available. If the source code were available without compiling and encrypting, then it would be possible to study and modify the program—that is what open-source software provides: the ability to read and modify the code behind the software.</p>
+		<p class="defn">Open-source software is software whose<b> <i>source code</i> </b>is available for anyone to view, modify, and enhance.</p>
+		<p class="defn"> <i>Source code </i>refers to computer instructions that are written by software developers in a programming language to manipulate the way software works. </p>
+			<p class="defns">Most <b>proprietary software </b>is distributed in the form of executable files, where the source code has been compiled such that it is encrypted for computer use, without the source code being available. If the source code were available without compiling and encrypting, then it would be possible to study and modify the program—that is what open-source software provides: the ability to read and modify the code behind the software.</p>
     <style>
-      #defn p {
+      .defn {
         font-size: 22px;
+      }
+      .defns {
+        font-size: 18px;
       }
     </style>
 	</section>
 
 	<section class="slide" id="defnf">
 		<h2>Definition of Free Software</h2>
-		<p class="next">Free software is not simply software for which there is no charge (although the term freeware is used generally to describe software without a cost). “Free software is software that gives you the user the freedom to share, study and modify it. We call this free software because the user is free,” according to the Free Software Foundation.</p>
+		<p>Free software is not simply software for which there is no charge (although the term freeware is used generally to describe software without a cost). </p>
+			<blockquote><p>Free software is software that gives you the user the freedom to share, study and modify it. We call this free software because the user is free</p> </blockquote>
+			<figcaption> Free Software Foundation</figcaption>
     <style>
       #defnf p {
         font-size: 22px;
@@ -79,26 +86,55 @@
     </style>
 	</section>
 
-	<section class="slide">
-    <blockquote> “Free software is a matter of liberty, not price. To understand the concept, you should think of free as in free speech, not as in free beer.” —Richard Stallman </blockquote>
-    <br />
-    <p>Free software refers to software that complies to “four essential freedoms” – to use, study, modify and distribute software for any purpose without legal restraint. A program is free software if the program’s users have these four essential freedoms, according to Richard Stallman, a founder of the movement:</p>
+	<section class="slide withbg">
+		<figure>
+			<img class="cover" src="pictures/stallman.jpg" alt="Richard Stallman">
+			<figcaption class="white">
+				<a href="https://in.pinterest.com/pin/447263806724737957/">Pinterest</a>
+			</figcaption>
+		</figure>
+		<div class="next">
+			<blockquote class="highlighted"> <p>Free software is a matter of liberty, not price. To understand the concept, you should think of free as in free speech, not as in free beer. </p></blockquote>
+			<figcaption class="highlighted">Richard Stallman</figcaption>
+		</div>
+		<p class="next highlighted">Free software refers to software that complies to “four essential freedoms” – to use, study, modify and distribute software for any purpose without legal restraint. A program is free software if the program’s users have these four essential freedoms, according to Richard Stallman, a founder of the movement:</p>
+    <style>
+      .withbg blockquote::before {
+        color: #000;
+			}
+			.highlighted {
+				background-color: rgba(0,0,0,.5);
+				color: #fff;
+				padding: 0px 10px;
+				border-radius: 10px;
+			}
+    </style>
+
 	</section>
 
 	<section class="slide">
+		<h2>The four freedoms</h2>
     <ul>
-      <li class="next">The freedom to run the program as you wish, for any purpose (freedom 0).</li>
-      <li class="next">The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.</li>
-      <li class="next">The freedom to redistribute copies so you can help your neighbor (freedom 2).</li>
-      <li class="next">The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.</li>
+      <li class="next def4f">The freedom to run the program as you wish, for any purpose <span class="freedom">(freedom 0).</span></li>
+      <li class="next def4f">The freedom to study how the program works, and change it so it does your computing as you wish <span class="freedom">(freedom 1)</span>. Access to the source code is a precondition for this.</li>
+      <li class="next def4f">The freedom to redistribute copies so you can help your neighbor <span class="freedom">(freedom 2)</span>.</li>
+      <li class="next def4f">The freedom to distribute copies of your modified versions to others <span class="freedom">(freedom 3)</span>. By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.</li>
     </ul>
+    <style>
+      .def4f {
+        font-size: 20px;
+			}
+			.freedom {
+				background-color: rgb(24, 209, 33);
+			}
+    </style>
 	</section>
 
 	<section class="slide">
 		<h2>How Does Open Source compare to Free Software?</h2>
-		<p>Open-source software is characterized by the public accessibility of its code, while free software focuses on the capabilities for using and sharing the software. These terms overlap somewhat, but they are not interchangeable. </p>
-    <p>Some additional terms for describing these overlapping ideologies for software projects are:</p>
-    <ul>
+		<p class="def4f">Open-source software is characterized by the public accessibility of its code, while free software focuses on the capabilities for using and sharing the software. These terms overlap somewhat, but they are not interchangeable. </p>
+    <p class="def4f">Some additional terms for describing these overlapping ideologies for software projects are:</p>
+    <ul class="def4f">
       <li>FOSS: Free [and] Open Source Software</li>
       <li>FLOSS Free / Libre [no cost] / Open Source Software</li>
     </ul>
@@ -106,7 +142,7 @@
 
 	<section class="slide">
 		<h2>A (brief) History of Open Source</h2>
-    <ul>
+    <ul class="def4f">
       <li>1950s Freely shared software was distributed amongst computer scientists working in academia.</li>
       <li>1960s Computer companies often bundled hardware products with the software required to operate them and sold them together.</li>
       <li>1980s Personal computers and corporate networks and the ever-growing prices associated with proprietary software and vendor lock-in</li>
@@ -115,17 +151,19 @@
 	</section>
 
 	<section class="slide">
+		<h2>General Public License</h2>
     <p>General Public License was created as an alternative software license for the GNU project</p>
     <br />
       <blockquote>GNU is a recursive acronym that stands for: GNU’s not UNIX </blockquote>
 	</section>
 
-	<section class="slide">
-    <p>The governing principles for open-source development were outlined by Eric Raymond in his book 1999 The Cathedral and the Bazaar</p>
+	<section class="slide def4f">
+    <p>The governing principles for open-source development were outlined by <b><i>Eric Raymond </i></b>in his book <i>The Cathedral and the Bazaar - (Published in 1999)</i></p>
     <ul>
       <li>The Cathedral model, where code is developed between releases restricted to an exclusive group of software developers</li>
       <li>The Bazaar model, where code is developed over the Internet with public access, as with the Linux kernel project led by  Linus Torvalds</li>
-    </ul>
+		</ul>
+		<p>A key takeaway from the book is the idea that <blockquote> Given enough eyeballs, all bugs are shallow. </blockquote> which he termed Linus’s Law, since the public availability of the source code makes it possible for a wider group of contributors to detect and correct software problems. </p>
 	</section>
 
 	<section class="slide">
@@ -133,20 +171,20 @@
 	</section>
 
 	<section class="slide" id="why">
-    <h1>Why Choose Open Source?</h1>
+    <h2>Why Choose Open Source?</h2>
     <p>As an end user, developer, or business manager, why should one consider whether or not to use open-source software. Here are some key factors:</p>
     <ul>
-      <li> There is typically little cost (some projects may add a small distribution fee)</li>
-      <li> There is no contractural license, instead the license outlines rules for sharing</li>
-        <li>The software is customizable, and public forums and documentation support that</li>
-        <li>There is no vendor lock-in for customization and bug fixes</li>
-        <li>Abandoned software projects can be adopted by new development teams</li>
-        <li>Open standards are typically employed, rather than proprietary standards</li>
-        <li>Bugs and security issues can be quickly resolved with software patches</li>
+			<li>There is typically little cost (some projects may add a small distribution fee)</li>
+			<li>There is no contractural license, instead the license outlines rules for sharing</li>
+			<li>The software is customizable, and public forums and documentation support that</li>
+			<li>There is no vendor lock-in for customization and bug fixes</li>
+			<li>Abandoned software projects can be adopted by new development teams</li>
+			<li>Open standards are typically employed, rather than proprietary standards</li>
+			<li>Bugs and security issues can be quickly resolved with software patches</li>
     </ul>
     <style type="text/css" media="all">
 #why ul {
-  font-size: 16px;
+  font-size: 18px;
 }
     </style>
 	</section>
@@ -159,24 +197,42 @@
 
 	<section class="slide" id="effect">
 		<h2>How does Open Source Apply to WordPress</h2>
-    <p>How does Open Source apply to WordPress? #How does Open Source apply to WordPress?  WordPress is open-source free software distributed under GPL license. WordPress began as a successor fork of the abandoned b2/cafelog software project, as Matt Mullenweg first pondered in a 2003 post “The Blogging Software Dilemma,” later that year posted “Whoa. WordPress.,” and then launched the original release on WordPress.org with the post “WordPress Now Available. Since then it has grown to be the largest self-hosted blogging tool in the world, used on millions of sites and seen by tens of millions of people every day.</p>
+			<p>WordPress is open-source free software distributed under GPL license. </p>
+			<p>WordPress began as a successor fork of the abandoned b2/cafelog software project, as Matt Mullenweg first pondered in a 2003 post “The Blogging Software Dilemma,” later that year posted “Whoa. WordPress.,” and then launched the original release on WordPress.org with the post “WordPress Now Available. </p>
+			<p>Since then it has grown to be the largest self-hosted blogging tool in the world, used on millions of sites and seen by tens of millions of people every day.</p>
     <style type="text/css" media="all">
     #effect p {
-      font-size: 16px;
+      font-size: 22px;
     }
     </style>
 	</section>
 
 	<section class="slide" id="effect2">
-		<h2>How can one contribute to WordPress?</h2>
-      <p>WordPress is maintained and advanced by a global community of volunteer contributors—some are employed by the WordPress sponsor company Automattic, some work for other companies that specialize in WordPress, and many more are independent users who use WordPress for any reason whatsoever. It’s not necessary to be a software developer who contributes code to the WordPress software, though that is an important role. There are many other ways any person can contribute to the project by assisting in support forums, writing documentation, making language translations, and helping with Meetups or WordCamps. Visit make.wordpress.org to learn more about the various teams working on WordPress and how to get involved.</p>
+		<h2>How can one <span class="funky-highlighted">contribute </span>to WordPress?</h2>
+			<p>WordPress is maintained and advanced by a global community of volunteer contributors—some are employed by the WordPress sponsor company Automattic, some work for other companies that specialize in WordPress, and many more are independent users who use WordPress for any reason whatsoever. </p>
+			<p>It’s not necessary to be a software developer who contributes code to the WordPress software, though that is an important role. </p>
+			<p>There are many other ways any person can contribute to the project by assisting in <span class="funky-highlighted">support forums, writing documentation, making language translations, and helping with Meetups or WordCamps</span>. Visit make.wordpress.org to learn more about the various teams working on WordPress and how to get involved.</p>
     <style type="text/css" media="all">
     #effect2 p {
-      font-size: 16px;
-    }
+      font-size: 18px;
+		}
+
+		.funky-highlighted {
+			background-color: rgba(26, 228, 19, 0.5);
+			color: #000;
+			padding: 0px 5px;
+			border-radius: 10px;
+		}
     </style>
 	</section>
 
+	<section class="slide" id="effect">
+		<h2>Thanks for your time, any questions ?</h2>
+			<p>@abyshakes</p>
+			<h3>Refrences</h3>
+			<a href="https://make.wordpress.org/training/handbook/user-lessons/what-is-open-source/">WordPress.org</a>
+			<p></p>
+	</section>
 
 	<div class="progress"></div>
 
